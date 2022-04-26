@@ -24,7 +24,8 @@ public class Customer {
 
 	public Boolean validateCustDetails() {
 
-		Pattern p = Pattern.compile("^\\d{10}$");
+		Pattern p = Pattern.compile("^[7-9]\\d{0,10}$");
+
 		Matcher m = p.matcher(mobNumber);
 
 		return (m.matches());
